@@ -1,132 +1,60 @@
-📈 Automação de Balanço de Vendas
-Este projeto automatiza a geração de um relatório de vendas mensal e envia o relatório por email de forma automática.
-Ele utiliza Pandas para o processamento dos dados e as bibliotecas smtplib e email.message para o envio de emails.
+# 📈 Sales Balance Automation
 
-✨ Funcionalidades
-Processa os dados de vendas de um arquivo (ex: .csv ou .xlsx)
+This project automates the generation of a detailed monthly sales report and sends it via email automatically.  
+It uses **Pandas** for data processing and **smtplib** and **email.message** for sending emails.
 
-Gera um relatório detalhado com informações do mês
+## ✨ Features
 
-Envia o relatório automaticamente por email
+- Processes sales data from a file (e.g., `.csv` or `.xlsx`)
+- Generates a detailed monthly report
+- Automatically sends the report via email
 
-🛠 Tecnologias utilizadas
-Pandas — manipulação de dados
+## 🛠 Technologies Used
 
-smtplib — envio de emails
+- [Pandas](https://pandas.pydata.org/) — data manipulation
+- [smtplib](https://docs.python.org/3/library/smtplib.html) — email sending
+- [email.message](https://docs.python.org/3/library/email.message.html) — email content creation
 
-email.message — criação do conteúdo do email
+## 📋 How to Use
 
-📋 Como usar
-Clone o repositório:
+1. **Clone the repository:**
 
-bash
-Copiar
-Editar
-git clone https://github.com/seu-usuario/seu-repositorio.git
-Instale as dependências (se necessário):
-
-bash
-Copiar
-Editar
-pip install pandas
-Configure as informações de envio de email no arquivo de configuração ou diretamente no código:
-
-python
-Copiar
-Editar
-EMAIL_REMETENTE = "seu-email@example.com"
-SENHA = "sua-senha"
-EMAIL_DESTINATARIO = "destinatario@example.com"
-Execute o script:
-
-bash
-Copiar
-Editar
-python automacao_balanco_vendas.py
-O relatório será enviado automaticamente para o destinatário configurado.
-
-📑 Exemplo de Relatório
-O relatório contém informações como:
-
-Total de vendas do mês
-
-Produto mais vendido
-
-Faturamento total
-
-Análise de crescimento (comparativo, se aplicável)
-
-🔒 Observações de segurança
-Evite deixar senhas diretamente no código.
-
-Recomenda-se utilizar variáveis de ambiente ou arquivos .env para armazenar credenciais de forma segura.
-
-
----------------------------------------------------------------------------------------------------------------------------------------------
-
-#english
-
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-📈 Sales Balance Automation
-This project automates the generation of a detailed monthly sales report and sends it via email automatically.
-It uses Pandas for data processing and smtplib and email.message for sending emails.
-
-✨ Features
-Processes sales data from a file (e.g., .csv or .xlsx)
-
-Generates a detailed monthly report
-
-Automatically sends the report via email
-
-🛠 Technologies Used
-Pandas — data manipulation
-
-smtplib — email sending
-
-email.message — email content creation
-
-📋 How to Use
-Clone the repository:
-
-bash
-Copiar
-Editar
+```bash
 git clone https://github.com/your-username/your-repository.git
-Install the dependencies (if needed):
+```
 
-bash
-Copiar
-Editar
+2. **Install the dependencies:**
+
+```bash
 pip install pandas
-Configure your email settings inside the script:
+```
 
-python
-Copiar
-Editar
+3. **Configure your email settings inside the script:**
+
+```python
 SENDER_EMAIL = "your-email@example.com"
 PASSWORD = "your-password"
 RECEIVER_EMAIL = "receiver@example.com"
-Run the script:
+```
 
-bash
-Copiar
-Editar
+4. **Run the script:**
+
+```bash
 python sales_balance_automation.py
+```
+
 The report will be automatically sent to the configured recipient.
 
-📑 Report Example
+## 💑 Report Example
+
 The report includes:
+- Total sales for the month
+- Best-selling product
+- Total revenue
+- Growth analysis (if applicable)
 
-Total sales for the month
+## 🔒 Security Notes
 
-Best-selling product
+- Avoid hardcoding your credentials inside the script.
+- It is highly recommended to use environment variables or a `.env` file to securely store sensitive information.
 
-Total revenue
-
-Growth analysis (if applicable)
-
-🔒 Security Notes
-Avoid hardcoding your credentials inside the script.
-
-It is highly recommended to use environment variables or a .env file to securely store sensitive information.
